@@ -56,8 +56,7 @@ The project utilizes pre-processed Vietnamese text data:
 3.  **Train:** Use the `data_generator` function and `model.fit()` with `ModelCheckpoint` callback to save the best model weights based on accuracy (`acc`).
     ```python
     model.fit(data_generator(sequences_digit, batch_size), 
-              steps_per_epoch=(len(sequences_digit)//batch_size), 
-              epochs=10, 
+              steps_per_epoch=(len(sequences_d50, 
               callbacks=callbacks_list)
     ```
 
